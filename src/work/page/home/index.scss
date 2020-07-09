@@ -1,0 +1,47 @@
+@import "../../style/ztao";
+
+button{
+  background: $lanse;
+  height: 30px;
+  border-radius: 4px;
+  color: #fff;
+  min-width: 60px;
+  outline: none;    //消除默认点击蓝色边框效果
+  cursor: pointer;
+  border: none;
+  &:hover{
+    background: $lvse;
+  }
+}
+
+.no_auth {
+  @include juzhong2();
+  height: 100vh;
+  font-size: 16px;
+}
+.react_home{
+  text-align: center;
+  padding-top: 80px;
+  width: 100vw;
+  font-size: 12px;
+  a{
+    color: $lanse;
+    cursor: pointer;
+  }
+  >div{
+    padding: 10px;
+    border: $biankuang;
+    margin: 5px 0;
+  }
+}
+.react_home_list{
+  >div{
+    padding: 5px 0;
+    >div{
+      padding: 3px 0;
+      &:first-child{
+        font-size: 14px;
+      }
+    }
+  }
+}
